@@ -3,8 +3,9 @@ from config import _CLIENTID
 from islive import is_live_stream
 import time
 
-stream_status = is_live_stream(_CLIENTID)
+
 while True:
+	stream_status = is_live_stream(_CLIENTID)
 	if stream_status:
 		print("Overwatch League is live")
 		driver = DriverClass()
